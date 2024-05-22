@@ -10,7 +10,7 @@ JOIN (
     GROUP BY CODIGO_MEDICO_REQUISITANTE
 ) A ON MR.CODIGO = A.CODIGO_MEDICO_REQUISITANTE
 WHERE A.RN = 1;
-
+ 
 /*2. Liste o nome do paciente, o nome do médico requisitante e a data de atendimento para todos os atendimentos realizados no mês de Abril*/
 
 SELECT p.NOME AS NOME_PACIENTE, mr.NOME AS NOME_MEDICO, ad.DATA_ATENDIMENTO
